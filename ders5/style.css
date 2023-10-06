@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,400&display=swap');
+
+:root{
+---ffff:#fff;
+---rrr:blue;
+}
+body{font-family: roboto;
+    margin: 0;
+    background-color:  rgb(1, 1, 31)
+    ; color:#3A68B8
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+   
+}
+
+.yazi-ucun {
+   
+    margin: 0 0 0 20px;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.button{
+    background-color: #273c75;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid wheat
+}
+header .nav-links{
+    display: none;
+}
+
+
+/* mobil ucun */
+.partner-company .companys .company:nth-child(2),
+.partner-company .companys .company:nth-child(3),
+.partner-company .companys .company:nth-child(4){
+    display: none;
+}
+
+
+.partner-company .companys .company{
+    display: flex;
+    justify-content: center;}
+
+
+    .partner-company .companys .company img{
+        width: 200px;
+        height: 50px;
+    }
+
+    /* Planset ucun */
+@media(min-width:767px) {
+    header .nav-links {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;}
+    header .fa-bars{display: none;}
+
+.introduction {
+    padding: 40px 100px !important;
+}
+.introduction .left-side .section{
+    font-size: 70px !important;
+}
+.introduction .right-side{
+    display: block;
+    width: 632px !important;
+    margin: 0 auto;
+}
+.partner-company .companys .company:nth-child(2){
+    display: block;
+}
+.partner-company .companys{
+    display: flex;
+    justify-content: space-around;
+}
+}
+
+/*For Notebook  */
+@media(min-width:1080px){
+    .introduction{
+        display: flex;
+    }
+    .introduction .left-side{
+        padding-top: ;
+    }
+    .partner-company .companys .company:nth-child(3),
+    .partner-company .companys .company:nth-child(4) {
+        display: block;
+    }
+}
+
+.introduction{
+    padding: 15px;
+}
+.introduction .left-side .section{
+    font-size: 30px;
+    color:var(---ffff);
+}
+
+.introduction .left-side .paragraf{
+    margin-bottom: 25px;
+    color:var(---ffff)
+    
+
+}
+.introduction .left-side .button1{
+    background: var(---rrr);
+    color: var(---ffff);
+    width:171px;
+    height:57px;
+}
+.introduction .left-side .button2{
+    background: var(---rrr);
+    color: var(---ffff);
+    width:171px;
+    height:57px;
+    margin-top: 15px;
+
+}
+
+.fa-play {
+    margin-right: 10px;
+}
+.introduction .right-side {
+    width: 300px;
+    margin-top: 25px;
+}
+.introduction .right-side img{
+    width: 100%;
+}
+
+
+
+/* bu butun htmli secir */
+*,*::before,*::after{
+    
+}
+
+.AI .left-side{ 
+    flex: 1 0 300;
+    flex-wrap: wrap;
+    color: #fff;
+
+}
+.AI .left-side img{
+    display: flex;
+    padding: 40 40;
+    width: 300px;
+    margin-top: 25px;
+}
+.AI .intelligences {
+    display: flex;
+    
+}
+ .AI .intelligences .intelligence{
+    flex: 1 0 300;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    border: 1px solid #253043 ;
+    border-radius: 20px;
+    background: #253043;
+    color: #fff;
+    
+}
