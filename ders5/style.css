@@ -88,7 +88,28 @@ header .nav-links{
     display: flex;
     justify-content: space-around;
 }
+section.AI .awards{
+    display: flex;
+    padding: 70px 30px;
 }
+section.AI .awards .left-side img{
+    width: 300px !important;
+
+section.AI .awards .right-side{
+    margin-top: 30px;
+    margin-left: 38px;
+}
+
+}
+section.footers {
+    display: flex;
+    padding: 70px 30px;
+    align-items: center;
+}
+section.footers .left-side {
+}
+}
+
 
 /*For Notebook  */
 @media(min-width:1080px){
@@ -101,6 +122,20 @@ header .nav-links{
     .partner-company .companys .company:nth-child(3),
     .partner-company .companys .company:nth-child(4) {
         display: block;
+    }
+    section.AI .awards{
+        display: flex;
+        align-items: center;
+    }
+    section.AI .awards .left-side img{
+        width: 500px !important;
+    }
+    section.footers {
+        display: flex;
+        align-items: center;
+    }
+    section.footers right-side img{
+        width: 500px !important;
     }
 }
 
@@ -151,30 +186,42 @@ header .nav-links{
     
 }
 
-.AI .left-side{ 
-    flex: 1 0 300;
-    flex-wrap: wrap;
-    color: #fff;
 
+
+section.AI .awards .right-side{ 
+    margin-top: 80px;
+    padding: 20px;
+    color: #fff;
 }
-.AI .left-side img{
-    display: flex;
-    padding: 40 40;
+section.AI .awards .left-side img{
+    margin: 0 auto;
+    display: block;
     width: 300px;
-    margin-top: 25px;
 }
 .AI .intelligences {
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
 }
  .AI .intelligences .intelligence{
-    flex: 1 0 300;
-    flex-wrap: wrap;
-    text-align: center;
-    
-    border: 1px solid #253043 ;
-    border-radius: 20px;
     background: #253043;
     color: #fff;
     
+}
+.AI .intelligences .intelligence img{
+    display: block;
+    margin: 0 auto;
+}
+section.footers .left-side {
+    margin-top: 80px;
+    padding: 20px;
+    color: #fff;
+}
+section.footers .right-side img{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+}
+section.footers .left-side p{
+justify-content: space-around;
 }
